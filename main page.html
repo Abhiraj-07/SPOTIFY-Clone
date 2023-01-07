@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/images.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title> Spotify Clone </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="chechNoon()">
+    <p id="brand">
+        <i class="fa-brands fa-spotify"></i>
+        <!-- <img src="/images.png" alt="Spotify"> -->
+        <span>
+            Spotify
+        </span>
+    </p>
+    <nav id="header">
+        <ul>
+            <li onclick="chechNoon()">
+                <i class="fa-solid fa-home" style="color: white;"></i>
+                Home
+            </li>
+            <li onclick="Search()">
+
+                <i class="fa-solid fa-book" style="color: white;"></i>
+                Your library
+
+            </li>
+            <li id="last_nav">
+
+
+                <i class="fa-solid fa-gear"></i>
+                Setting
+            </li>
+
+        </ul>
+        <li id="person_icon">
+            <i class="fa-solid fa-user"></i>
+        </li>
+    </nav>
+    <br>
+    <br>
+    <hr>
+
+
+
+    <div id="side_box">
+        <ul>
+            <li id="side_box-first">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                search
+                &nbsp;
+                &nbsp;
+                <i class="fa-solid fa-microphone"></i>
+            </li>
+            <li>
+                wrapped
+            </li>
+            <li>
+             
+                podcast
+            </li>
+            <li>
+                made for Your
+            </li>
+        </ul>
+    </div>
+
+    <div id="playListContainer">
+
+
+        <div id="playList">
+
+
+
+            <div class="playlists" id="playlis-1">Todays's Top Hit</div>
+            <div class="playlists" id="playlis-2">Chill Hits</div>
+            <div class="playlists" id="playlis-3">Mega Hot mix</div>
+            <div class="playlists" id="playlis-4">All out 80</div>
+            <div class="playlists" id="playlis-5">All out 90</div>
+            <div class="playlists" id="playlis-6">All out 20</div>
+            <div class="playlists" id="playlis-7">Rock Classics</div>
+            <div class="playlists" id="playlis-8">Viva Latino</div>
+            <div class="playlists" id="playlis-9">Rock Classic</div>
+         
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward-fast"></i>
+            <span onclick="changeOnPlay()">
+                <span id="play1">
+                    <i class="fa-solid fa-play"></i>
+                </span>
+                <span id="play2">
+                    <i class="fa-solid fa-pause"></i>
+                </span>
+            </span>
+            <!-- font awesome icons -->
+            <i class="fa-solid fa-forward-fast"></i>
+            <script src="/main.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>

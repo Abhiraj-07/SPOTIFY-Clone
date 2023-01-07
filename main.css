@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: rgb(199, 196, 196);
+}
+
+body {
+    background-image: linear-gradient(rgb(9, 9, 106), black, black);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* brand logo  and   heading " soptify "  */
+#brand {
+    display: inline;
+
+
+}
+
+#brand>span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#brand>i {
+    margin-left: 15px;
+    margin-top: 10px;
+font-size: 27px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: rgb(87, 199, 18);
+}
+
+/*                  Nav bar                     */
+#header>ul {
+    display: flex;
+    list-style: none;
+    margin-left: 16vw;
+}
+
+#header>ul>li {
+     display: inline;        
+     margin-top: 15px;
+    margin-left: 17px;
+    margin-right: 17px; 
+} 
+#last_nav{
+    margin-right: 0px; 
+
+}
+
+#header>ul>li:hover {
+    color: gray;
+}
+
+#header>ul>li>i:hover {
+    color: gray;
+
+
+}
+
+#header {
+    position: absolute;
+    left: 30%;
+    top: 3%;
+    display: inline;
+
+
+}
+
+#person_icon {
+    position: absolute;
+    top: 0vh;
+    right: -9vw;
+    border: 0px solid;
+    /* background-image: linear-gradient(rgb(228, 158, 158),rgb(234, 113, 113),rgb(234, 64, 64),red); */
+    background-image: linear-gradient(rgb(212, 0, 0), rgb(106, 3, 3), rgb(169, 3, 3));
+
+
+    text-align: center;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+}
+
+#person_icon>i {
+    margin-top: 7px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+/*                       bottom    play, pause                       */
+
+.bottom {
+    position: fixed;
+    bottom: 3%;
+    width: 100vw;
+    text-align: center;
+
+}
+
+/*                                           side box                        */
+
+#side_box{
+    display: flex;
+    justify-content:right;
+
+}
+
+#side_box>ul{
+
+    list-style: none;
+}
+
+#side_box>ul>li{
+    border-radius: 5px;
+    margin-top: 3px;
+    border: 1px solid white;
+    background-color: white;
+    text-align: center;
+}
+#side_box-first{
+    border-radius: 5px;
+    margin-top: 3px;
+    border: 1px solid white;
+    background-color: white;
+    text-align: center;
+}
+#play2{
+    display: none;
+}
+
+
+/*                                                     Bottom                            */
+
+
+.bottom>input {
+
+    width: 60vw;
+}
+/* #myProgressBar{
+    background: #9a905d;
+    color: wheat;
+    border-color: green;
+} */
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 25rem;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #646464;
+    border-radius: 1rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px; /* Centers thumb on the track */
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #ffffff;
+    outline-offset: 0.125rem;
+  }
+  
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #8f8f8f;
+    border-radius: 1rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: #ffffff;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #ffffff;
+    outline-offset: 0.125rem;
+  }
+
+
+  /*                                              Play List collection                                      */
+
+  #playListContainer{
+
+    margin-left: 5px;
+    position: absolute;
+    top: 23vh;
+    /* background-color: black; */
+    /* height: 200vh; */
+    width: 77vw;
+  }
+  #playList{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 5px;
+
+}
+  .playlists{
+    padding: 9px;
+    border-radius: 8px;
+    text-align:right;
+    border:  2px solid rgb(131 146 167);
+    display: inline-block;
+    height: 17vh;
+    width: 25vw;
+  }
